@@ -1,0 +1,9 @@
+.header {
+    /* background-image: url('../images/header/header-bg.jpg'); */
+
+    background-image: image-set(
+        '../images/header/header-bg.avif' type('image/avif'),
+        '../images/header/header-bg.webp' type('image/webp'),
+        '../images/header/header-bg.jpg' type('image/jpeg')
+    );
+}
