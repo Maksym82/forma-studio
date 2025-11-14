@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 button {
   background-color: transparent;
   padding: 0;
@@ -32,6 +36,18 @@ button {
   max-width: 1740px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.section-box {
+  padding: 150px 0;
+}
+
+.section__title {
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  margin-bottom: 55px;
 }
 
 .header {
@@ -71,9 +87,9 @@ button {
   z-index: 10;
 }
 
-.menu__btn::before, 
+.menu__btn::before,
 .menu__btn::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -143,7 +159,7 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 1300px)  {
+@media (max-width: 1300px) {
   .menu__btn {
     display: flex;
   }
@@ -156,7 +172,7 @@ button {
     justify-content: center;
     align-items: center;
     transform: translateY(-100%);
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
   .menu__list.active {
     transform: translateY(0);
