@@ -159,6 +159,37 @@ button {
   cursor: pointer;
 }
 
+/* Section Services */
+.services {
+  background-color: #171717;
+  color: #f5f5f5;
+}
+
+.services__list {
+  border-top: 1px solid #f5f5f5;
+}
+
+.services__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid #f5f5f5;
+  padding-right: 44px;
+}
+
+.services__item-title {
+  font-weight: 300;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.services__item-text {
+  max-width: 800px;
+  width: 100%;
+}
+
 @media (max-width: 1300px) {
   .menu__btn {
     display: flex;
@@ -177,15 +208,38 @@ button {
   .menu__list.active {
     transform: translateY(0);
   }
+
+  .services__item {
+    display: block;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 740px) {
   .header__top {
     padding: 40px 0;
   }
+
   .header__title {
     padding-top: 75px;
     font-size: 64px;
+  }
+
+  .section-box {
+    padding: 50px 0;
+  }
+
+  .section__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  .services__item {
+    padding: 10px 0;
+  }
+
+  .services__item-title {
+    font-size: 20px;
   }
 }
 
