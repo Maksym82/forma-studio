@@ -68,6 +68,7 @@ button {
   justify-content: center;
   width: 40px;
   height: 24px;
+  z-index: 10;
 }
 
 .menu__btn::before, 
@@ -132,7 +133,6 @@ button {
   display: inline-block;
   padding: 20px 49px;
   width: 260px;
-  height: 59px;
   background: #f5f5f5;
   line-height: 1.16;
   font-weight: 300;
@@ -149,7 +149,17 @@ button {
   }
 
   .menu__list {
-    display: none;
+    position: absolute;
+    inset: 0;
+    background-color: #171717;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform .3s ease-in-out;
+  }
+  .menu__list.active {
+    transform: translateY(0);
   }
 }
 
@@ -167,14 +177,22 @@ button {
   .header__phone span {
     display: none;
   }
+
+  .header__phone img {
+    width: 24px;
+  }
+
   .header__title {
     padding-top: 50px;
-    font-size: 48px;
+    font-size: 42px;
   }
+
   .header__text {
     font-size: 22px;
   }
+
   .header__btn {
     font-size: 16px;
+    padding: 16px 49px;
   }
 }
