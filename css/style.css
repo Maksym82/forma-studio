@@ -15,6 +15,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #2b2b2b;
+  overflow-x: hidden;
 }
 
 a {
@@ -223,6 +224,11 @@ button {
   margin-bottom: 30px;
 }
 
+.projects__slider {
+  padding-bottom: 50px;
+  overflow: visible;
+}
+
 .projects__item-link {
   display: inline-block;
   border: 1px solid #2b2b2b;
@@ -232,6 +238,23 @@ button {
   text-transform: uppercase;
   color: #2b2b2b;
 }
+
+.projects__arrow {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  cursor: pointer;
+}
+
+.projects__arrow-prev {
+  transform: translateX(-75px);
+}
+.projects__arrow-next {
+transform: translateX(15px);
+}
+
+
+
 
 @media (max-width: 1300px) {
   .menu__btn {
