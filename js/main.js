@@ -20,7 +20,7 @@ const swiper = new Swiper(".projects__slider", {
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 3.3,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
   },
