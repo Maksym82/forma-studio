@@ -256,6 +256,33 @@ button {
   transform: translateX(15px);
 }
 
+/* Section Steps */
+.steps {
+
+}
+
+.steps__title {
+
+}
+
+.steps__list {
+  
+}
+
+.steps__item {
+
+}
+
+.steps__item-title {
+
+}
+
+.steps__item-text {
+  
+}
+
+
+
 /* Media */
 @media (max-width: 1300px) {
   .menu__btn {
