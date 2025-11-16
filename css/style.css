@@ -10,7 +10,6 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  /* font-family: "Montserrat", sans-serif; */
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -258,30 +257,51 @@ button {
 
 /* Section Steps */
 .steps {
-
+  padding: 60px 0 100px;
+  background-color: #171717;
+  color: #f5f5f5;
 }
 
 .steps__title {
-
+  max-width: 562px;
 }
 
 .steps__list {
-  
+  max-width: 562px;
+  list-style: none;
+  counter-reset: my-counter;
 }
 
 .steps__item {
+  position: relative;
+  counter-increment: my-counter;
+  padding-left: 57px;
+}
 
+.steps__item::before {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  content: counter(my-counter);
+  border: 1px solid #f5f5f5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .steps__item-title {
-
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.16;
+  margin-bottom: 8px;
 }
 
 .steps__item-text {
-  
 }
-
-
 
 /* Media */
 @media (max-width: 1300px) {
