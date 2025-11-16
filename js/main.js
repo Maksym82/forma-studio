@@ -9,9 +9,10 @@ const swiper = new Swiper(".projects__slider", {
   // Optional parameters
   loop: true,
   slidesPerView: 1,
+  spaceBetween: 20,
 
   breakpoints: {
-    640: {
+    595: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
