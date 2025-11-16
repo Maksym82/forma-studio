@@ -10,12 +10,9 @@ const swiper = new Swiper(".projects__slider", {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 20,
+  grabCursor: true,
 
   breakpoints: {
-    595: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
     768: {
       slidesPerView: 2,
       spaceBetween: 20,
