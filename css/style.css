@@ -400,16 +400,27 @@ input::placeholder {
   width: 17px;
   height: 17px;
   accent-color: #2b2b2b;
+  margin: 0;
 }
 
 .catalog__form-btn {
   padding: 20px 54px;
+  background-color: #171717;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: #f5f5f5;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
 }
 
 /* Media */
@@ -442,6 +453,21 @@ input::placeholder {
   }
   .steps__list {
     padding-bottom: 40px;
+  }
+
+  .catalog__content {
+    display: block;
+  }
+
+  .catalog__content-img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -499,6 +525,18 @@ input::placeholder {
   .steps {
     padding: 50px 0;
   }
+
+  .catalog__content {
+    margin-bottom: 50px;
+  }
+
+  .catalog__form {
+    max-width: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 540px) {
@@ -542,5 +580,36 @@ input::placeholder {
     padding-top: 0;
     padding-bottom: 5px;
     margin-top: -1px;
+  }
+  .catalog__content-img {
+    margin-bottom: 20px;
+  }
+
+  .catalog__form-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .catalog__form-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .catalog__form-input {
+    font-size: 18px;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+
+  .catalog__form-label {
+    margin-bottom: 20px;
+  }
+
+  .catalog__form-btn {
+    padding: 15px 54px;
+    font-size: 16px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
   }
 }
