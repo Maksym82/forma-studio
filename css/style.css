@@ -29,6 +29,19 @@ button {
   background-color: transparent;
   padding: 0;
   border: none;
+  font-family: inherit;
+  color: inherit;
+  display: inline-block;
+}
+
+input {
+  font-family: inherit;
+  color: inherit;
+}
+
+input::placeholder {
+  font-family: inherit;
+  color: inherit;
 }
 
 .container {
@@ -320,11 +333,83 @@ button {
   margin-bottom: 12px;
 }
 
-.steps__img img{
+.steps__img img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Section Catalog */
+.catalog__title {
+  max-width: 556px;
+}
+
+.catalog__content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 150px;
+}
+
+.catalog__form {
+  max-width: 557px;
+  width: 100%;
+}
+
+.catalog__form-title {
+  max-width: 430px;
+  margin-bottom: 20px;
+  line-height: 1.16;
+  font-weight: 300;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.catalog__form-text {
+  max-width: 430px;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.catalog__form-input {
+  display: inline-block;
+  border: 1px solid #171717;
+  padding: 20px;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 1.16;
+  color: #2b2b2b;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.catalog__form-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.46;
+  margin-bottom: 50px;
+}
+
+.catalog__form-checkbox {
+  width: 17px;
+  height: 17px;
+  accent-color: #2b2b2b;
+}
+
+.catalog__form-btn {
+  padding: 20px 54px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 /* Media */
