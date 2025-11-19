@@ -305,9 +305,13 @@
         </h2>
         <div class="catalog__content">
           <picture>
-            <source srcset="images/catalog/catalog.avif" type="image/avif">
-            <source srcset="images/catalog/catalog.webp" type="image/webp">
-            <img class="catalog__content-img" src="./images/catalog/catalog.jpg" alt="The couple chooses from the catalogue">
+            <source srcset="images/catalog/catalog.avif" type="image/avif" />
+            <source srcset="images/catalog/catalog.webp" type="image/webp" />
+            <img
+              class="catalog__content-img"
+              src="./images/catalog/catalog.jpg"
+              alt="The couple chooses from the catalogue"
+            />
           </picture>
           <form class="catalog__form">
             <h3 class="catalog__form-title">
@@ -324,10 +328,12 @@
               required
             />
             <label class="catalog__form-label">
-              <input class="catalog__form-checkbox" type="checkbox">
+              <input class="catalog__form-checkbox" type="checkbox" />
               I agree to the processing of personal data
             </label>
-            <button class="catalog__form-btn" type="submit">Get the catalog</button>
+            <button class="catalog__form-btn" type="submit">
+              Get the catalog
+            </button>
           </form>
         </div>
         <div class="gallery">
@@ -339,6 +345,27 @@
           <img src="images/catalog/6.jpg" alt="" />
           <img src="images/catalog/7.jpg" alt="" />
           <img src="images/catalog/8.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Request -->
+    <section class="request">
+      <div class="container">
+        <div class="request__inner">
+          <form class="request__form">
+            <h2 class="request__title section__title">
+              Submit a request and we will assist you with your project
+            </h2>
+            <input
+              type="email"
+              class="request__form-input"
+              placeholder="Enter your email"
+              required
+            />
+            <button class="request__form-btn" type="submit">
+              Submit a request
+            </button>
+          </form>
         </div>
       </div>
     </section>
