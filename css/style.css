@@ -598,6 +598,19 @@ input::placeholder {
   .request__inner {
     padding: 85px 0;
   }
+
+  .request__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .request__form-btn {
+    width: 100%;
+  }
+
+  .request__inner-form {
+    padding: 50px 10px;
+  }
 }
 
 @media (max-width: 540px) {
