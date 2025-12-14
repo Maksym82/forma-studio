@@ -475,6 +475,12 @@ input::placeholder {
   color: #2b2b2b;
   padding: 20px 50px;
   cursor: pointer;
+  transition: background-color 0.25s linear;
+}
+
+.request__form-btn:hover,
+.request__form-btn:focus {
+  background-color: #e5c7c7;
 }
 
 /* Footer */
@@ -504,6 +510,11 @@ input::placeholder {
   font-weight: 300;
 }
 
+.footer__nav-link:hover,
+.footer__nav-link:focus {
+  text-decoration: underline;
+}
+
 .footer__social {
   display: flex;
   flex-direction: column;
@@ -515,6 +526,11 @@ input::placeholder {
   display: flex;
   gap: 10px;
   line-height: 1.16;
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus {
+  text-decoration: underline;
 }
 
 .footer__contacts {
@@ -530,6 +546,11 @@ input::placeholder {
   line-height: 1.16;
   font-size: 14px;
   font-weight: 300;
+}
+
+.footer__contacts-link:hover,
+.footer__contacts-link:focus {
+  text-decoration: underline;
 }
 
 .footer__contacts-time {
