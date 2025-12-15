@@ -298,11 +298,12 @@
       </div>
     </section>
     <!-- Catalog -->
-    <section class="catalog section-box">
+    <section class="catalog section-box" aria-labelledby="catalog-title">
       <div class="container">
-        <h2 class="catalog__title section__title">
+        <h2 id="catalog-title" class="catalog__title section__title">
           Get a catalog of our projects
         </h2>
+
         <div class="catalog__content">
           <picture>
             <source srcset="images/catalog/catalog.avif" type="image/avif" />
@@ -310,42 +311,83 @@
             <img
               class="catalog__content-img"
               src="./images/catalog/catalog.jpg"
-              alt="The couple chooses from the catalogue"
+              alt="Couple choosing a project style from the catalog"
             />
           </picture>
-          <form class="catalog__form">
-            <h3 class="catalog__form-title">
-              Leave your email to receive our project catalog
-            </h3>
-            <p class="catalog__form-text">
-              The catalog will help you choose a style and plan your layout.
-            </p>
-            <input
-              class="catalog__form-input"
-              type="email"
-              name="user-email"
-              placeholder="Enter your email"
-              required
-            />
-            <label class="catalog__form-label">
-              <input class="catalog__form-checkbox" type="checkbox" />
-              I agree to the processing of personal data
-            </label>
-            <button class="catalog__form-btn" type="submit">
-              Get the catalog
-            </button>
+
+          <form class="catalog__form" aria-describedby="catalog-desc">
+            <fieldset>
+              <legend class="catalog__form-title">
+                Leave your email to receive our project catalog
+              </legend>
+              <p id="catalog-desc" class="catalog__form-text">
+                The catalog will help you choose a style and plan your layout.
+              </p>
+
+              <label for="user-email" class="visually-hidden"
+                >Email address</label
+              >
+              <input
+                id="user-email"
+                class="catalog__form-input"
+                type="email"
+                name="user-email"
+                placeholder="Enter your email"
+                aria-required="true"
+                required
+              />
+
+              <div class="catalog__form-agreement">
+                <input
+                  id="agree"
+                  class="catalog__form-checkbox"
+                  type="checkbox"
+                  required
+                  aria-required="true"
+                />
+                <label for="agree" class="catalog__form-label">
+                  I agree to the processing of personal data
+                </label>
+              </div>
+
+              <button
+                class="catalog__form-btn"
+                type="submit"
+                aria-label="Submit email to receive catalog"
+              >
+                Get the catalog
+              </button>
+            </fieldset>
           </form>
         </div>
-        <div class="gallery">
-          <img src="images/catalog/1.jpg" alt="" />
-          <img src="images/catalog/2.jpg" alt="" />
-          <img src="images/catalog/3.jpg" alt="" />
-          <img src="images/catalog/4.jpg" alt="" />
-          <img src="images/catalog/5.jpg" alt="" />
-          <img src="images/catalog/6.jpg" alt="" />
-          <img src="images/catalog/7.jpg" alt="" />
-          <img src="images/catalog/8.jpg" alt="" />
-        </div>
+
+        <ul class="gallery" aria-label="Project gallery">
+          <li class="gallery__item">
+            <img src="images/catalog/1.jpg" alt="Modern living room project" />
+          </li>
+          <li class="gallery__item">
+            <img src="images/catalog/2.jpg" alt="Minimalist kitchen design" />
+          </li>
+          <li class="gallery__item">
+            <img src="images/catalog/3.jpg" alt="Elegant bedroom layout" />
+          </li>
+          <li class="gallery__item">
+            <img
+              src="images/catalog/4.jpg" alt="Contemporary office interior"/>
+          </li>
+          <li class="gallery__item">
+            <img src="images/catalog/5.jpg" alt="Luxury bathroom concept" />
+          </li>
+          <li class="gallery__item">
+            <img src="images/catalog/6.jpg" alt="Open-space loft project" />
+          </li>
+          <li class="gallery__item">
+            <img src="images/catalog/7.jpg" alt="Classic dining room design" />
+          </li>
+          <li class="gallery__item">
+            <img src="images/catalog/8.jpg" alt="Stylish hallway solution" />
+          </li>
+        </ul>
       </div>
     </section>
     <!-- Request -->
@@ -381,7 +423,6 @@
               alt="Логотип Forma studio"
             />
           </a>
-         
 
           <ul class="footer__nav">
             <li class="footer__nav-item">
@@ -466,7 +507,7 @@
             </li>
           </ul>
         </div>
-         <p class="footer__copy">&copy;2010-2025 Bureau</p>
+        <p class="footer__copy">&copy;2010-2025 Bureau</p>
       </div>
     </footer>
 
