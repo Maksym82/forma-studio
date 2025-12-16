@@ -232,6 +232,12 @@ input::placeholder {
   text-align: center;
   color: #2b2b2b;
   cursor: pointer;
+  transition: background-color 0.25s linear;
+}
+
+.header__btn:hover,
+.header__btn:focus {
+  background-color: #e5c7c7;
 }
 
 /* Section Services */
@@ -449,10 +455,12 @@ input::placeholder {
   width: 100%;
 }
 
-.catalog__form-label {
+.catalog__form-agreement {
   display: flex;
-  align-items: center;
   gap: 10px;
+}
+
+.catalog__form-label {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.46;
