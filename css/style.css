@@ -129,6 +129,36 @@ input::placeholder {
   text-transform: uppercase;
 }
 
+.menu__link {
+  position: relative;
+  transition: color 0.25s linear;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  color: lightblue;
+}
+
+.menu__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: lightblue;
+  border-radius: 5px 5px 0px 0px;
+  transform: scaleX(0);
+  transition: transform 350ms linear;
+}
+
+.menu__link:hover::after,
+.menu__link:focus::after {
+  transform: scaleX(1);
+  transition: transform 350ms linear;
+}
+
 .logo {
   justify-self: center;
 }
