@@ -322,6 +322,12 @@ input::placeholder {
   font-size: 18px;
   text-transform: uppercase;
   color: #2b2b2b;
+  transition: background-color 0.25s linear;
+}
+
+.projects__item-link:hover,
+.projects__item-link:focus {
+  background-color: #e5c7c7;
 }
 
 .projects__arrow {
@@ -483,6 +489,13 @@ input::placeholder {
   line-height: 1.16;
   text-transform: uppercase;
   color: #f5f5f5;
+  cursor: pointer;
+  transition: background-color 0.25s linear;
+}
+
+.catalog__form-btn:hover,
+.catalog__form-btn:focus {
+  background-color: #534f4f;
 }
 
 .gallery {
