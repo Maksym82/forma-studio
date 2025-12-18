@@ -460,6 +460,11 @@ input::placeholder {
   color: #2b2b2b;
   margin-bottom: 30px;
   width: 100%;
+  outline: none;
+}
+
+.catalog__form-input:focus {
+  border: 1px solid #e5c7c7;
 }
 
 .catalog__form-agreement {
