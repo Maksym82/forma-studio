@@ -613,6 +613,7 @@ input::placeholder {
 .footer__nav-link:hover,
 .footer__nav-link:focus {
   text-decoration: underline;
+  color: lightblue;
 }
 
 .footer__social {
